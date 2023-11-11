@@ -1,8 +1,10 @@
-# CT Image Reconstruction
+# [CT Image Reconstruction](https://github.com/rlatkd/CTImageReconstruction/tree/main/p4)
 
 # **Abstract**
 
-이번 Project에선 medical image를 처리하는 syetem 중 CT의 작동양상 및 image reconstruction에 대해 알아본다. 실제 CT는 안에 대상은 가만히 있고 기계가 돌아가며 image를 얻어내지만, 이번에는 그렇게 할 수 없으니 나만의 image를 회전시켜 data를 얻는다. Image rotating을 위한 function을 개별적으로 만들어 이를 이용한 angle step당 projection data를 얻어 1차적으로 sinogram을 얻어낸다. 그 후 얻어낸 sinogram을 MATLAB의 iradon function을 이용해 back-projectio하여 image를 reconstruction하고, 이 때 filter의 유무와 더 나아가 filter의 종류가 image quality에 어떠한 영향을 미치는지 알아본다. 또한 interpolation의 종류가 image quality에 미치는 영향도 알아본다. 이러한 simulation을 통해 CT image reconstruction을 진행해본다.
+이번 Project에선 medical image를 처리하는 syetem 중 CT의 작동양상 및 image reconstruction에 대해 알아본다. 실제 CT는 안에 대상은 가만히 있고 기계가 돌아가며 image를 얻어내지만, 이번에는 그렇게 할 수 없으니 나만의 image를 회전시켜 data를 얻는다.
+
+Image rotating을 위한 function을 개별적으로 만들어 이를 이용한 angle step당 projection data를 얻어 1차적으로 sinogram을 얻어낸다. 그 후 얻어낸 sinogram을 MATLAB의 iradon function을 이용해 back-projection하여 image를 reconstruction하고, 이 때 filter의 유무와 더 나아가 filter의 종류가 image quality에 어떠한 영향을 미치는지 알아본다. 또한 interpolation의 종류가 image quality에 미치는 영향도 알아본다. 이러한 simulation을 통해 CT image reconstruction을 진행해본다.
 
 # **Introduction**
 
