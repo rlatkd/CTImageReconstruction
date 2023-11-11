@@ -14,7 +14,9 @@ Sinogram을 얻은 후에는 image reconstruction을 위해 iradon이라는 func
 
 또한 5종류의 filter를 각각 적용하여 back-projection을 진행하고 original image와의 MSE 값을 비교하여 내가 선택한 image를 reconstruction 할 때 가장 적합한 filter를 찾아내고 다양한 interpolation 방법에 의한 image quality 차이도 알아본다. 마지막으로 image를 회전할 때 angle step마다 reconstruction 되는 image가 얼마나 차이나는지 확인한다.
 
-## [Methods](https://github.com/rlatkd/CTImageReconstruction/blob/main/p4/p4.pdf)
+## [Methods]
+
+## [Results & Discussion]
 
 
 ## **Conclusion**
