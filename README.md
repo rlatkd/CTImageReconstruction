@@ -1,12 +1,12 @@
-# [CT Image Reconstruction](https://github.com/rlatkd/CTImageReconstruction/tree/main/p4)
+## [CT Image Reconstruction](https://github.com/rlatkd/CTImageReconstruction/tree/main/p4)
 
-# **Abstract**
+## **Abstract**
 
 Medical image를 처리하는 syetem 중 CT의 작동양상 및 image reconstruction에 대해 알아본다. 실제 CT는 안에 대상은 가만히 있고 기계가 돌아가며 image를 얻어내지만, 그렇게 할 수 없으니 나만의 image를 회전시켜 data를 얻는다.
 
 Image rotating을 위한 function을 개별적으로 만들어 이를 이용한 angle step당 projection data를 얻어 1차적으로 sinogram을 얻어낸다. 그 후 얻어낸 sinogram을 MATLAB의 iradon function을 이용해 back-projection하여 image를 reconstruction하고, 이 때 filter의 유무와 더 나아가 filter의 종류가 image quality에 어떠한 영향을 미치는지 알아본다. 또한 interpolation의 종류가 image quality에 미치는 영향도 알아본다. 이러한 simulation을 통해 CT image reconstruction을 진행해본다.
 
-# **Introduction**
+## **Introduction**
 
 CT는 X-ray를 이용하여 우리 몸을 진단하는 medical imaging system이다. CT의 구조와 원리를 이해하고 image 처리 방식을 알아본다. CT image를 얻기 위해선 projection data를 기반으로 한 sinogram을 얻어야 하는데, 이를 위해 image를 회전시켜줄 function을 직접 구현한다. 이때 image rotating을 진행하기 전에 image size를 256×256으로 변환해준다.
 
@@ -14,10 +14,10 @@ Sinogram을 얻은 후에는 image reconstruction을 위해 iradon이라는 func
 
 또한 5종류의 filter를 각각 적용하여 back-projection을 진행하고 original image와의 MSE 값을 비교하여 내가 선택한 image를 reconstruction 할 때 가장 적합한 filter를 찾아내고 다양한 interpolation 방법에 의한 image quality 차이도 알아본다. 마지막으로 image를 회전할 때 angle step마다 reconstruction 되는 image가 얼마나 차이나는지 확인한다.
 
-# [Methods](https://github.com/rlatkd/CTImageReconstruction/blob/main/p4/p4.pdf)
+## [Methods](https://github.com/rlatkd/CTImageReconstruction/blob/main/p4/p4.pdf)
 
 
-# **Conclusion**
+## **Conclusion**
 
 X-ray가 물체를 통과할 때 생기는 linear attenuation coefficient를 이용하여 우리 몸을 진단하는 의료영상기기인 CT를 modeling하고 simulation하였다. 대상은 가만히 있고 기계가 돌아가며 image를 얻어내는 실제 CT와는 다르게, 내가 선택한 image를 직접 회전시켜 projection data를 얻어냈다.
 
