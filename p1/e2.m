@@ -1,0 +1,14 @@
+t = 0:0.5:120;
+k = 0.025;
+y= 75*exp(-k.*t);
+figure(1);
+for i = 1:1:3;
+	plot(t,y);
+	hold on;
+	k = 2*k;
+	y = 75*exp(-k.*t);
+end;
+title('Changes of y when k=0.025, 0.05, 0.1');
+xlabel('time[min]');
+ylabel('Drugs in the body[g]');
+legend('k = 0.025', 'k = 0.05', 'k = 0.1');
