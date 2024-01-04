@@ -1,6 +1,6 @@
 # biomedical systems modeling project using MATLAB vR2022a & Simulink v10.7
 
-## **Abstract**
+## **Abstract1**
 
 Medical image를 처리하는 syetem 중 CT의 작동양상 및 image reconstruction에 대해 알아본다. 실제 CT는 안에 대상은 가만히 있고 기계가 돌아가며 image를 얻어내지만, 그렇게 할 수 없으니 나만의 image를 회전시켜 data를 얻는다.
 
