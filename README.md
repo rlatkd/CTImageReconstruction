@@ -1,4 +1,4 @@
-# biomedical systems modeling project using MATLAB vR2022a & Simulink v10.71
+# biomedical systems modeling project using MATLAB vR2022a & Simulink v10.7
 
 ## **Abstract**
 
